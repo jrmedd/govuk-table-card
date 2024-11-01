@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "description": "A responsive table component that uses vertically stacked cards on mobile",
+    "urls": {
+      "documentation": "https://github.com/jrmedd/govuk-table-card",
+      "releaseNotes": "https://github.com/jrmedd/govuk-table-card",
+      "versionHistory": "https://npmjs.com/package/govuk-table-card?activeTab=versions"
+    }
+  },
+  "pluginDependencies": [
+    "govuk-prototype-kit"
+  ],
+  "nunjucksPaths": [
+    "/"
+  ],
+  "nunjucksMacros": [
+    {
+      "macroName": "govukTableCard",
+      "importFrom": "/components/govukTableCard/macro.njk"
+    }
+  ],
+  "sass": [
+    "/scss/styles.scss"
+  ]
+}

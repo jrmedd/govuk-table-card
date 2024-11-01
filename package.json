@@ -1,0 +1,37 @@
+{
+  "name": "govuk-table-card",
+  "version": "1.0.0",
+  "description": "A responsive table component that uses vertically stacked cards on mobile",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrmedd/govuk-table-card.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jrmedd/govuk-table-card/issues"
+  },
+  "homepage": "https://github.com/jrmedd/govuk-table-card#readme",
+  "keywords": [
+    "prototyping",
+    "government",
+    "govuk-prototype-kit",
+    "table",
+    "responsive",
+    "cards",
+    "accessible"
+  ],
+  "files": [
+    "components",
+    "scss",
+    "govuk-prototype-kit.config.json"
+  ],
+  "scripts": {
+  },
+  "author": "jrmedd",
+  "license": "WTFPL",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "govuk-prototype-kit": "^13.0.0"
+  }
+}

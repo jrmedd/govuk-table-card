@@ -1,0 +1,24 @@
+{% macro govukTableCard(params) %}
+<table role="table" class="govuk-table-card">
+  {% if params.caption %}
+  <caption class="govuk-table__caption {{ params.caption.classes if params.caption.classes }}">{{ params.caption.text }}</caption>
+  {% endif %}
+  <thead role="rowgroup">
+      <tr role="row">
+        {% for header in params.headers %}
+          <th role="columnheader" scope="col" {% if header.numeric %}class="govuk-table__header--numeric"{% endif %}>{{ header.name}}</th>
+        {% endfor %}
+      </tr>
+  </thead>
+  <tbody role="rowgroup">
+    {% for row in params.rows %}
+      <tr role="row">
+        {% for column in row %}
+          {% set header = params.headers[loop.index0] %}
+          <td role="cell" {% if header.numeric %}class="govuk-table__cell--numeric"{% endif %}><span class="govuk-table-card-inline-label" aria-hidden="true">{{ header.name }}</span> {{ column }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endmacro %}
